@@ -1,0 +1,67 @@
+<%=layout("/layouts/boilerplate")%>
+
+<div class="row mt-3 mb-5">
+    <div class="col-8 offset-1">
+
+    <form action="/posts" 
+        novalidate 
+        class="offset-5 needs-validation" 
+        method="POST" 
+        enctype="multipart/form-data"
+        >
+        
+        <h2 class="bg-info text-white text-center">Create A new Sale</h2>
+        <div class="mb-3 mt-4">
+            <label for="productName">ProductName</label>
+            <input name="post[productName]" required class="form-control"  type="text" id="productName" placeholder="Enter ProductName">
+            <div class="valid-feedback">ProductName looks good!</div>
+            <div class="invalid-feedback">Please enter a ProductName</div>
+        </div>
+        <div class="mb-3">
+            <label for="description">Description</label>
+            <input name="post[description]" required class="form-control" type="text"  id="description" placeholder="Enter description">
+            <div class="valid-feedback">Description looks good!</div>
+            <div class="invalid-feedback">Please enter a Description</div>
+        </div>
+        <div class="mb-3">
+            <label for="shopName">ShopName</label>
+            <input name="post[shopName]" required class="form-control" type="text" id="shopName" placeholder="Enter shopName">
+            <div class="valid-feedback">ShopName looks good!</div>
+            <div class="invalid-feedback">Please enter a ShopName</div>
+        </div>
+        <!-- <div class="mb-3">
+            <label for="imageUrl">Image-Url</label>
+            <input name="post[image]" class="form-control" type="text"  id="imageUrl" placeholder="Enter Image url">
+             <div class="valid-feedback">ShopName looks good!</div> 
+             <div class="invalid-feedback">Please enter a valid Image Url/link</div>
+        </div>  -->
+        
+        <div class="mb-3">
+            <label for="image" class="form-label">Upload Post Image</label>
+            <input name="post[image]" required class="form-control" type="file" id="image" >
+        </div> 
+
+        <div class="mb-3">
+            <label for="originalPrice">OriginalPrice</label>
+            <input name="post[originalPrice]" required class="form-control" type="number" id="originalPrice" placeholder="Enter originalPrice">
+            <!-- <div class="valid-feedback">ShopName looks good!</div> -->
+            <div class="invalid-feedback">Please enter a OriginalPrice</div>
+        </div>
+        <div class="mb-3">
+            <label for="price">Price</label>
+            <input name="post[price]" required class="form-control"  id="price" placeholder="Enter price">
+            <!-- <div class="valid-feedback">ShopName looks good!</div> -->
+            <div class="invalid-feedback">Please enter a price</div>
+        </div>
+        <div class="mb-3">
+            <label for="location">Location</label>
+            <input name="post[location]" required class="form-control" type="text" id="location" placeholder="Enter location">
+            <div class="valid-feedback">ShopName looks good!</div>
+            <div class="invalid-feedback">Please enter a Location</div>
+        </div>
+
+        <button class="btn btn-dark offset-3 w-50">ADD</button>
+    </form>
+
+</div>
+</div>

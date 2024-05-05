@@ -1,0 +1,93 @@
+body{
+    font-family:'Plus Jakarta Sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+a{
+    text-decoration: none !important;
+}
+/* navbar */
+.navbar{
+    height: 5rem;
+    background-color: rgb(225, 233, 237);
+}
+.fa-cart-shopping{
+    color: #425efe;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #425efe !important;
+}
+.navbar-toggler{
+    color: #425efe !important;
+}
+.search-btn{
+    background-color: #425efe !important;
+}
+/* cards */
+.post-card {
+    border: none !important;
+    margin-bottom: 2rem;
+    width: 20rem !important;
+    color: black !important;
+    text-decoration: none !important;
+}
+.post-card:hover{
+    border-radius: 1rem !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important; 
+}
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+
+.card-title card-text p h2 {
+    font-weight: 400 !important;
+    border: none !important;
+    text-decoration: none !important;
+}
+
+.post-link{
+    text-decoration: none;
+}
+
+.location{
+    margin-bottom: 5px !important;
+}
+
+/* .outer-div-post{
+    width: 100% !important;
+} */
+
+/*Card effect*/
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+
+/* Show Page */
+.show-img{
+    height: 35vh;
+}
+
+.btns{
+    display: flex;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}

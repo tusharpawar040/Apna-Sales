@@ -1,0 +1,29 @@
+
+<%=layout("/layouts/boilerplate")%>
+
+    <style>
+        body{
+            text-decoration: none !important;
+        }
+    </style>
+    
+    <h1>All Sales</h1>
+        <div class="d-flex row row-cols-auto justify-content-center flex-wrap align-items-center column-gap-3">
+            <%for (let post of allPosts) {%>
+                <a href="/posts/<%=post._id%>" class="post-link mr-2">
+                    <div class="card col post-card">
+                        <img class="card-img-top" src="<%=post.image.url%>" alt="Card image cap" style="height: 20rem; width: 20rem;">
+                        <div class="card-body">
+                        <h2 class="card-title"><%=post.productName%></h2>
+                        <span>Original-Price: <span class="card-text" style="text-decoration: line-through;"><%=post.originalPrice.toLocaleString("en-IN")%></span>
+                        <p class="card-text"><b>Offer-Price: <%=post.price.toLocaleString("en-IN")%></b></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </a>
+            <%}%>
+        </div>
+    <!-- </ul> -->
+
+    
+    
